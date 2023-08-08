@@ -49,7 +49,7 @@ Ex:See the COde(EmployeeController2.java,employeeDetails2.jsp)
 ->To use JSTL language in jsp file, we need to  use taglib uri syntax in jsp file..
 ->syntax of taglib core uri: <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 ->when we run again we got one error i.e java.lang.NoClassDefFoundError: javax/servlet/jsp/tagext/TagLibraryValidator
-->to slve above error we need to add two more dependency i.e....
+->to solve above error we need to add two more dependency i.e....
 <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
 <dependency>
     <groupId>jakarta.servlet.jsp.jstl</groupId>
@@ -84,6 +84,9 @@ Ex:See the Code(UserLoginController.java,success.jsp)
 =>Using 'RequestParam with Model wit User' data will send View to Controller..
 Ex:See the Code(UserLoginController.java,success2.jsp)
  
+******SpringMVC with Redirect Concept*********
+->redirect the url using redirect prefix(here simple String) and using "RedirectView" as return type.
+Ex:See the code(RedirectStudentController.java)
 
 
 

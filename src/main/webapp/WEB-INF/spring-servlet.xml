@@ -9,7 +9,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
 <!-- Configure annotation base package -->
-<context:component-scan base-package="com.nt.niranjana.spring.mvc.controller"/>
+<context:component-scan base-package="com.nt.niranjana.spring.mvc"/>
 
 <!-- Configure ViewResolver<I> implementation class -->
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="viewResolver">
@@ -18,8 +18,4 @@
 </bean>
 
 
-
-
-
-		
 </beans>

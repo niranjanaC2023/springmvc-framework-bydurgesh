@@ -103,7 +103,7 @@ public class UserLoginController
 			return "success2";	
 		}
 		
-		//using Model with User and @ModelAttribute
+		//using Model with User and @ModelAttribute(Create a User model with same property name as loginform.jsp label input 'name'
 			@RequestMapping(path="/loginFormDataUsingModelWithUserAndModelAttribute",method=RequestMethod.POST)
 			public String handleFormusingModelWithUserAndModelAttribute(@ModelAttribute User user, Model model)
 			{			
