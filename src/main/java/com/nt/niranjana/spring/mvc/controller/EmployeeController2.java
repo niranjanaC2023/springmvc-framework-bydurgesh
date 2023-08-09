@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -13,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class EmployeeController2 
 {
 	@RequestMapping("/insertEmployeeData2")
-	public ModelAndView registerEmployeeDetails(Model model)
+	public ModelAndView registerEmployeeDetails()
 	{
 		//creating ModelAndView object
 		ModelAndView modelAndView = new ModelAndView();

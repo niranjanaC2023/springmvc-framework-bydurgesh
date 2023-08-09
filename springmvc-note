@@ -85,8 +85,13 @@ Ex:See the Code(UserLoginController.java,success.jsp)
 Ex:See the Code(UserLoginController.java,success2.jsp)
  
 ******SpringMVC with Redirect Concept*********
-->redirect the url using redirect prefix(here simple String) and using "RedirectView" as return type.
+->Redirect concept used for: redirect the url one page to another page.
+->redirect the url by 3 ways: 1.using redirect prefix(here simple String) and 2.using "RedirectView" as return type.
 Ex:See the code(RedirectStudentController.java)
 
+***********SpringMVC with RedirectView with ExceptionHandler********
+Ex:See the Code(SearchController.java,CustomExceptionHandler.java)
+
+************SpringMVC with Interceptor********************
 
 

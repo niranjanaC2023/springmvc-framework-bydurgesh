@@ -3,7 +3,6 @@ package com.nt.niranjana.spring.mvc.controller;
 import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -11,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class EmployeeController 
 {
 	@RequestMapping("/insertEmployeeData")
-	public ModelAndView registerEmployeeDetails(Model model)
+	public ModelAndView registerEmployeeDetails()
 	{
 		//creating ModelAndView object
 		ModelAndView modelAndView = new ModelAndView();
