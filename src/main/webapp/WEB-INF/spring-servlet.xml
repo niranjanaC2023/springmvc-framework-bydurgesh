@@ -23,10 +23,15 @@
 
 <!-- Interceptor tag is coming form nvc tag, first use mvc schema then mvc annotation driven then Configure Interceptor -->
 <mvc:interceptors>	
+	 <mvc:interceptor>
+		<mvc:mapping path="/hellomsgdisplay"/>
+		<bean class="com.nt.niranjana.spring.mvc.interceptor.MyInterceptor"></bean>
+	</mvc:interceptor> 
+	
 	<mvc:interceptor>
-		<mvc:mapping path=""/>
-		<bean class=""></bean>
-	</mvc:interceptors>
-</mvc:interceptor>
+		<mvc:mapping path="/loginFormDataUsingModelInterceptor"/>
+		<bean class="com.nt.niranjana.spring.mvc.interceptor.MyIDPwdValidationInterceptor"></bean>
+	</mvc:interceptor>
+</mvc:interceptors>
 
 </beans>

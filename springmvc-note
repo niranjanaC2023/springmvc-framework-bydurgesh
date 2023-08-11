@@ -93,5 +93,13 @@ Ex:See the code(RedirectStudentController.java)
 Ex:See the Code(SearchController.java,CustomExceptionHandler.java)
 
 ************SpringMVC with Interceptor********************
+=>Interceptor concept used before request hit (means before handler method execute)and after request hit(after handler method execute).
+->before request hit i.e preprocessing and after request hit i.e postprocessing.
+->i am creating my own class i.e MyInterceptor and implements HandlerInterceptor<I>
+->Then over 3 methods: preHandle,postHandle,afterCompletion
+->preHandle run before our control class method run..
+->In Login Authentcation case first it will check our ID and PWD . if ID and PWD correct then only hit the handler method..else interceptor validation msg will shown
+Ex:SEE the code(IDPasswordCheckInterceptorController.java,spring-servlet.xml,idpwdvalivationform.jsp,success.jsp)
+
 
 
